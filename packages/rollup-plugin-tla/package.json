@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-tla",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "A rollup plugin to add top level await support for iife/umd",
   "keywords": [
