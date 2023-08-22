@@ -1,0 +1,49 @@
+{
+  "name": "rollup-plugin-tla",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A rollup plugin to add top level await support for iife/umd",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "top level await",
+    "iife",
+    "umd"
+  ],
+  "author": "lisonge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisonge/rollup-plugin-tla.git",
+    "directory": "packages/rollup-plugin-tla"
+  },
+  "bugs": {
+    "url": "https://github.com/lisonge/rollup-plugin-tla/issues"
+  },
+  "homepage": "https://github.com/lisonge/rollup-plugin-tla#readme",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "acorn-walk": "^8.2.0",
+    "magic-string": "^0.30.3"
+  },
+  "engines": {
+    "pnpm": ">=6",
+    "node": "^14.18 || >= 16"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

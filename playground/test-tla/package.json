@@ -1,0 +1,14 @@
+{
+  "name": "test-tla",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin typescript"
+  },
+  "dependencies": {
+    "rollup-plugin-tla": "workspace:*"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}
