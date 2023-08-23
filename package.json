@@ -6,6 +6,7 @@
     "@release-it/conventional-changelog": "^7.0.0",
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/node": "^20.5.2",
+    "acorn": "^8.10.0",
     "prettier": "^3.0.2",
     "release-it": "^16.1.5",
     "rollup": "^3.28.1",
