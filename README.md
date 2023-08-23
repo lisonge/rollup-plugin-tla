@@ -17,7 +17,7 @@ then change iife/umd module wrap function to async function
 
 `for await(const a of b){}` -> `__T$L$A__FOR((async()=>{for await(const a of b){}})())` -> `for await(const a of b){}`
 
-this plugin project code come from [vite-plugin-monkey](https://github.com/lisonge/vite-plugin-monkey/blob/35f56bd76cb426aeab115eda1d8e7c5df1457c5b/packages/vite-plugin-monkey/src/node/topLevelAwait.ts)
+the original code of this plugin project comes from [vite-plugin-monkey](https://github.com/lisonge/vite-plugin-monkey/blob/35f56bd76cb426aeab115eda1d8e7c5df1457c5b/packages/vite-plugin-monkey/src/node/topLevelAwait.ts)
 
 ## Installation
 
