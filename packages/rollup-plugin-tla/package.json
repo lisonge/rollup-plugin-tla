@@ -32,12 +32,34 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "release": "release-it"
   },
   "dependencies": {
     "acorn-walk": "^8.2.0",
     "magic-string": "^0.30.3"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
   },
   "engines": {
     "pnpm": ">=6",
